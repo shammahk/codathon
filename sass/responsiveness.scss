@@ -1,0 +1,128 @@
+
+@media only screen and (max-width: 768px) {
+    body {
+        width: 100vw;
+        font-size: 16px;
+    }
+
+    header {
+        background: white;
+        .first {
+            background: $purple-pri !important;
+        }
+    }
+
+    .loop {
+
+        &.btm {
+            display: none !important;
+        }
+    }
+
+    main {
+        display: block !important; 
+        position: relative;  
+        margin-top: 100px;
+        overflow: hidden;
+        width: 100vw !important;
+
+        > .left { 
+            
+            .loop {
+                // overflow: visible !important;
+                width: 250vw !important;
+                height: 15em !important;
+
+                &.top { 
+                    position: absolute; 
+                    top: 210px; 
+                    z-index: -1;
+                    transform: translate(-2em, -210px) rotateX(180deg) rotateY(180deg) !important ; 
+                }  
+
+                img {
+                    object-fit: cover;
+                }
+            } 
+        } 
+
+        .cont {  
+            padding: 0 1em !important;
+            align-items: center;
+            text-align: center;
+ 
+            h1 {
+                margin-top: 2.5em;
+            }
+        }
+
+        .cta {
+            bottom: -26em !important;
+            width: 100% !important; 
+            flex-flow: column;
+            align-items: center !important;
+            padding: 0 !important;
+ 
+            input[type="email"] {
+                width: 90% !important; 
+                margin-bottom: 1em; 
+                text-align: center;
+            }
+
+            .notify {
+                width: 40% !important;
+            }
+        } 
+        
+        > .right {  
+            height: 40vh !important; 
+            width: 95vw !important; 
+            margin-bottom: 13em;
+            float: right;
+ 
+            .logo {
+                display: none;  
+            } 
+
+            .left {
+                width: 60% !important;
+                position: static !important;
+            }
+        } 
+    } 
+    
+    footer {
+        display: flex !important;   
+        flex-flow: column;
+        height: auto !important;
+    
+        .left {
+            width: 100vw !important; 
+            height: 12.5em !important;
+            flex-flow: column; 
+            border-radius: 0 0 50px 0 !important;
+    
+            p {
+                font-size: 1em !important;
+            }
+        }
+    
+        .right {
+            width: 100vw !important; 
+            height: 12.5em !important;
+            flex-flow: wrap; 
+            justify-content: center !important;
+            align-items: center;
+     
+            li {
+                width: 50%;
+                text-align: center;
+            }
+
+            .copyright { 
+                position: static !important;
+            }
+        }
+    }
+} 
+ 

@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100vw;
+    font-size: 16px;
+  }
+
+  header {
+    background: white;
+  }
+  header .first {
+    background: #9060f9 !important;
+  }
+
+  .loop.btm {
+    display: none !important;
+  }
+
+  main {
+    display: block !important;
+    position: relative;
+    margin-top: 100px;
+    overflow: hidden;
+    width: 100vw !important;
+  }
+  main > .left .loop {
+    width: 250vw !important;
+    height: 15em !important;
+  }
+  main > .left .loop.top {
+    position: absolute;
+    top: 210px;
+    z-index: -1;
+    transform: translate(-2em, -210px) rotateX(180deg) rotateY(180deg) !important;
+  }
+  main > .left .loop img {
+    object-fit: cover;
+  }
+  main .cont {
+    padding: 0 1em !important;
+    align-items: center;
+    text-align: center;
+  }
+  main .cont h1 {
+    margin-top: 2.5em;
+  }
+  main .cta {
+    bottom: -26em !important;
+    width: 100% !important;
+    flex-flow: column;
+    align-items: center !important;
+    padding: 0 !important;
+  }
+  main .cta input[type=email] {
+    width: 90% !important;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  main .cta .notify {
+    width: 40% !important;
+  }
+  main > .right {
+    height: 40vh !important;
+    width: 95vw !important;
+    margin-bottom: 13em;
+    float: right;
+  }
+  main > .right .logo {
+    display: none;
+  }
+  main > .right .left {
+    width: 60% !important;
+    position: static !important;
+  }
+
+  footer {
+    display: flex !important;
+    flex-flow: column;
+    height: auto !important;
+  }
+  footer .left {
+    width: 100vw !important;
+    height: 12.5em !important;
+    flex-flow: column;
+    border-radius: 0 0 50px 0 !important;
+  }
+  footer .left p {
+    font-size: 1em !important;
+  }
+  footer .right {
+    width: 100vw !important;
+    height: 12.5em !important;
+    flex-flow: wrap;
+    justify-content: center !important;
+    align-items: center;
+  }
+  footer .right li {
+    width: 50%;
+    text-align: center;
+  }
+  footer .right .copyright {
+    position: static !important;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+header .nav div {
+  width: 50px;
+  height: 5px;
+  background: #afb1ee;
+  margin-bottom: 0.3em;
+  border-radius: 10px;
+}
+header .nav div.first {
+  background: white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main > .left .loop {
+  width: 100%;
+  height: 12em;
+  overflow: hidden;
+}
+main > .left .loop img {
+  width: 300%;
+  height: 300%;
+  object-fit: cover;
+}
+main > .left .loop.top {
+  transform: translateX(200px) rotateX(180deg) rotateY(180deg);
+}
+main > .left .loop.btm {
+  transform: translate(-200px, 20px);
+}
+main > .left .cont {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 0 9em;
+  position: relative;
+}
+main > .left .cont h1 {
+  font-size: 2em;
+  color: #2e3341;
+  margin-bottom: 0.8em;
+  padding-right: 1em;
+}
+main > .left .cont > p {
+  margin-top: 0;
+  color: #929394;
+}
+main > .left .cta {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -5.2em;
+  z-index: 100;
+  width: 70%;
+  padding-right: 2em;
+}
+main > .left .cta input[type=email] {
+  width: 60%;
+  height: 50px;
+  border-radius: 30px;
+  border: 0;
+  padding-left: 20px;
+  background: #f1ebff !important;
+}
+main > .left .cta input[type=email]::placeholder {
+  color: #9e85d6;
+}
+main > .left .cta .notify {
+  height: 50px;
+  width: 30%;
+  border-radius: 30px;
+  background: #9060f9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+main > .left .cta .notify .left {
+  width: 35px;
+  height: 35px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main > .left .cta .notify .left img {
+  object-fit: cover;
+}
+main > .left .cta .notify .right {
+  color: white;
+  font-size: 0.8em;
+  transform: translateX(-1em);
+}
+main > .right {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  color: white;
+}
+main > .right > .bg {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  position: absolute;
+  z-index: -100;
+}
+main > .right .left {
+  position: absolute;
+  bottom: 2em;
+  left: 5em;
+  width: 40%;
+  font-size: 1.4em;
+  margin: 0;
+}
+main > .right .right {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: white;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+footer .left {
+  width: 80%;
+  height: 9.8em;
+  background: #9060f9;
+  border-radius: 0 100px 0 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+}
+footer .left p {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-right: 20px;
+}
+footer .left .socials {
+  display: flex;
+}
+footer .left .socials .cont {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+footer .left .socials .cont .dark {
+  color: #2e3341;
+}
+footer .right {
+  width: 90%;
+  height: 9.8em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  position: relative;
+}
+footer .right a {
+  font-size: 0.8em;
+  color: #2e3341;
+  text-decoration: none;
+}
+footer .right .copyright {
+  color: rgba(146, 147, 148, 0.5);
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 2em;
+  right: 0;
+}
+footer .loop {
+  width: 50%;
+  height: 9.4em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -100;
+}
+footer .loop img {
+  width: 300%;
+  height: 300%;
+}
+footer .loop.btm {
+  transform: translate(300px, 50px) rotateY(180deg);
+}
+
+/*# sourceMappingURL=layout.css.map */
