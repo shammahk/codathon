@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 758px) {
   body {
     width: 100vw;
     font-size: 16px;
@@ -113,6 +113,48 @@
     position: static !important;
   }
 }
+@media (min-width: 768px) and (max-width: 1000px) {
+  html {
+    font-size: 15px !important;
+  }
+
+  main .cont {
+    padding: 0 1em 0 2em !important;
+    transform: translate(0, -3em) !important;
+  }
+  main .cta {
+    font-size: 0.8em !important;
+  }
+  main .cta input::placeholder {
+    font-size: 0.8em;
+  }
+  main .cta input::-ms-input-placeholder {
+    font-size: 0.8em;
+  }
+  main .cta .notify {
+    justify-content: space-between !important;
+    padding: 0 0 0 0.3em;
+  }
+  main .cta .notify .left {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  main .loop.top {
+    transform: translate(200px, -100px) rotateX(180deg) rotateY(180deg);
+  }
+  main .loop.btm {
+    width: 100% !important;
+    height: 7em !important;
+    transform: translate(-400px, -10px) !important;
+  }
+  main .right {
+    font-size: 0.8em !important;
+  }
+
+  footer {
+    font-size: 0.8em !important;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -179,7 +221,7 @@ main .cta .notify {
   justify-content: space-around;
   align-items: center;
   text-decoration: none;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 10px rgba(144, 96, 249, 0.5);
   transition: transform 0.3s ease-in-out;
 }
 main .cta .notify:hover {
