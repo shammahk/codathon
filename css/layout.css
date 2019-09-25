@@ -135,7 +135,7 @@
     justify-content: space-between !important;
     padding: 0 0 0 0.3em;
   }
-  main .cta .notify .left {
+  main .cta .notify .left img {
     width: 30px !important;
     height: 30px !important;
   }
@@ -153,6 +153,31 @@
 
   footer {
     font-size: 0.8em !important;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1420px) {
+  body {
+    max-height: 100vh;
+    overflow: hidden;
+  }
+
+  main .cont {
+    padding: 0 2em !important;
+  }
+  main .loop.top {
+    transform: translate(200px, -100px) rotateX(180deg) rotateY(180deg);
+  }
+  main .loop.btm {
+    width: 100% !important;
+    height: 7em !important;
+    transform: translate(-350px, -70px) !important;
+  }
+  main .right {
+    font-size: 0.8em !important;
+  }
+
+  footer {
+    transform: translateY(-70px) !important;
   }
 }
 * {
